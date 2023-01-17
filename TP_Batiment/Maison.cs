@@ -10,13 +10,13 @@
         public Maison(string Adress, int nbPieces)//constructeur classe (enfant)
             : base(Adress)//constructeur classe^parente déjà typé dans la classe parente.
         {
-
+            NbPieces = nbPieces;
         }
 
-        public void ToString(Maison objt)
+        public void ToString()
         {
-            Console.WriteLine($"adresse:{objt.Adress}");
-            Console.WriteLine($"nombre de pièces:{objt.NbPieces}");
+            Console.WriteLine($"adresse:{Adress}");
+            Console.WriteLine($"nombre de pièces:{NbPieces}");
         }
     }
 }

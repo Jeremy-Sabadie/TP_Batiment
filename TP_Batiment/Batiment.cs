@@ -14,6 +14,7 @@
         //Constructeur1:
         public Batiment(string adress)
         {
+            Adress = adress;
             instanceCount += 1;
 
         }
@@ -22,9 +23,9 @@
         {
             instanceCount += 1;
         }
-        public void ToString(Batiment batiment)
+        public void ToString()
         {
-            Console.WriteLine($"adresse:{batiment._Adress}");
+            Console.WriteLine($"adresse:{Adress}");
         }
 
 
